@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding = "12dp">
+    <ImageView
+        android:layout_width = "50dp"
+        android:layout_height = "50dp"
+        android:src = "@drawable/ic_account_circle_black_24dp"
+        android:id = "@+id/profilePic"/>
+    <TextView
+        android:layout_toRightOf = "@id/profilePic"
+        android:layout_marginLeft = "20dp"
+        android:fontFamily = "@font/avenir"
+        android:text = "@string/profile_name"
+        android:textStyle = "bold"
+        android:layout_height = "wrap_content"
+        android:layout_width = "wrap_content"
+        android:textSize = "20sp"
+        android:textColor = "#000000"
+        android:id = "@+id/profileName"/>
+    <LinearLayout
+        android:layout_height = "wrap_content"
+        android:layout_width = "wrap_content"
+        android:layout_toRightOf = "@id/profilePic"
+        android:layout_marginLeft = "20dp"
+        android:layout_below = "@id/profileName"
+        android:layout_marginTop = "10dp">
+        <ImageView
+            android:layout_width = "20dp"
+            android:layout_height = "20dp"
+            android:src = "@drawable/snapopen"
+            android:id = "@+id/statusSymbol"/>
+        <TextView
+            android:text = "@string/received"
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:fontFamily = "@font/avenir"
+            android:textSize = "15sp"
+            android:layout_marginLeft = "8dp"
+            android:id = "@+id/statusName"/>
+        <TextView
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "•"
+            android:layout_marginLeft = "8dp"
+            android:textSize = "15sp"/>
+        <TextView
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "28m"
+            android:layout_marginLeft = "8dp"
+            android:fontFamily = "@font/avenir"
+            android:id = "@+id/time"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
